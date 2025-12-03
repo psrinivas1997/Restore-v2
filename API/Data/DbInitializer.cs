@@ -13,7 +13,7 @@ public class DbInitializer
         using var scope = app.Services.CreateScope();
 
         var context = scope.ServiceProvider.GetRequiredService<StoreContext>()
-         ?? throw new InvalidOperationException("Failed to retrieve store contaxt");
+         ?? throw new InvalidOperationException("Failed to retrieve store context");
         SeedData(context);
     }
 
