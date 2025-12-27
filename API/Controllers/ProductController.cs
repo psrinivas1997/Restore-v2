@@ -10,7 +10,7 @@ namespace API.Controllers
     {
        
 
-        [HttpGet]
+       [HttpGet]
         public async Task<ActionResult<List<Product>>> GetProducts()
         {
            return await context.Products.ToListAsync();
